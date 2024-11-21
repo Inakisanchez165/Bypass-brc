@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*! HEADER*/
+header{
+    background-color: #140103;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Barra-Busqueda input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li {
+    margin: 10px 5px 10px 5px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a:hover {
+    color: rebeccapurple;
+}
+.fixer a img {
+    width: 50px;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+.fixer a img:hover{
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(190deg);
+}
+.fixer a { 
+    margin: 0 10px;
+    display: inline-block; 
+    color: white;
+    font-size: 20px; 
+    height: auto;
+    transition: filter 0.5s ease;
+}
+.fixer a:hover{
+color: rebeccapurple;
+}
+/*! MAIN */
+.hero{
+    height: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-image: url(../img/fondo-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-carta{
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+.bypass-123{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: white;
+}
+h3{
+    color: whitesmoke;
+}
+h4{
+    color: azure;
+}
+.espectaculos{
+    height: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: url(../img/fondo-espect.jpg) ;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+p{
+    display: block;
+    color: beige;
+}
+.Tour-Virtual {
+background-image:url(../img/bola-cristal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*!html COntacto*/
+.contact{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ! GRDS */
+.Contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    background: url(https://th.bing.com/th/id/R.c8e652aaeb508fd91677462fcad7ffb2?rik=930SvJctrgmHVA&riu=http%3a%2f%2fs3.amazonaws.com%2ffiverr.com%2fdeliveries%2f614353%2flarge%2fweb-banner-design-header_ws_1369117576.gif%3f1369117576&ehk=jGGj6bTRPXRkgAIHUDelx9JPvvmaSRV5s2B3BRQu2fk%3d&risl=&pid=ImgRaw&r=0) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.Contenedor-Carta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    background-image: url(../img/fondo-bar.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.Contenedor-Carta div{
+    background-color: #3c1544be;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a050563;
+    border: 1px solid #ccc;
+    padding: 5px;
+    height: 200px;
+    margin: 0;
+
+}
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/*!FOOOTER*/
+.footer {
+    background-color:#C20114;
+    text-align: center;
+    padding: 5px; 
+    position: fixed; 
+    width: 75px; 
+}
+
+.fixer {
+    background-color: #C20114;
+    margin-bottom: 10px; 
+}
+
+.fixer a {
+    margin: 0 10px; 
+    display: inline-block;
+}
+
+.fixer img {
+    width: 50px; 
+    height: auto; 
+}
+@media (max-width: 900px) {
+.Contenedor{
+grid-template-columns: repeat (2, 1fr);
+}
+.Tour-Virtual{
+    background-image: url(../img/Bypass-color.jpg);
+}
+.Contenedor-Carta{
+    grid-template-columns: 1fr;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 10px;
+    height: 200px;
+}
+.fixer a{
+    font-size: 15px;
+}
+}
+
+@media (max-width:720px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+    header .logo, header .Barra-Busqueda {
+        display: block;
+        margin: 10px;
+    }
+    header .Barra-Busqueda{
+        margin-top: 10px;
+    }
+    header.main{
+        padding: 10px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 500px){
+    nav ul li a{
+        font-size: 10px;
+    }
+    .Contenedor{
+    grid-template-columns: (1fr);
+}
+}
+
