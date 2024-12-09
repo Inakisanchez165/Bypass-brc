@@ -117,7 +117,7 @@ h4{
 }
 p{
     display: block;
-    color: beige;
+    color: white;
 }
 .Tour-Virtual {
 background-image:url(../img/bola-cristal.jpg);
@@ -129,6 +129,44 @@ background-image:url(../img/bola-cristal.jpg);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*! html moods */
+.FiestaEgresados { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    height: 1000px; 
+    width: 100%; 
+    background-image: url(https://sc01.alicdn.com/kf/H96f45dfa9b4443fc85b8862795818831B/204927226/H96f45dfa9b4443fc85b8862795818831B.jpeg); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    text-align: center; 
+    align-items: center; 
+    gap: 16px; 
+    padding: 16px; } 
+    .tarjeta { 
+        background-color: white; 
+        border-radius: 8px; 
+        overflow: hidden; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+        width: 300px; 
+        height: auto; 
+        margin: 0 auto; 
+    } 
+    .imagenfiesta { 
+        width: 100%; 
+        height: auto; 
+    } 
+    .tarjeta p { 
+        color: black; 
+        font-size: 30px; 
+    } 
+.tarjeta h2 { 
+    color: black; 
+    font-size: 30px,
 }
 /*!html COntacto*/
 .contact{
@@ -203,7 +241,8 @@ background-image:url(../img/bola-cristal.jpg);
 }
 @media (max-width: 900px) {
 .Contenedor{
-grid-template-columns: repeat (2, 1fr);
+grid-template-columns: repeat (2, fr);
+grid-template-rows: repeat(2, auto);
 }
 .Tour-Virtual{
     background-image: url(../img/Bypass-color.jpg);
@@ -211,6 +250,7 @@ grid-template-columns: repeat (2, 1fr);
 .Contenedor-Carta{
     grid-template-columns: 1fr;
 }
+
 .item {
     display: flex;
     justify-content: center;
@@ -231,6 +271,11 @@ grid-template-columns: repeat (2, 1fr);
     header .logo, header .Barra-Busqueda {
         display: block;
         margin: 10px;
+    }
+    .FiestaEgresados{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        height: auto;
     }
     header .Barra-Busqueda{
         margin-top: 10px;
