@@ -13,8 +13,21 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+}
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
+section{
+    width: 100%;
+}
+body{
+    padding: 0 ;
+    margin: 0;
+    background-color: black;
+}
 .Barra-Busqueda input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -92,99 +105,390 @@ h1{
     align-items: center;
 }
 h2{
-    color: white;
-}
+    color:  #C20114; 
+};
+
 h3{
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
 }
 h4{
     color: azure;
 }
-.espectaculos{
-    height: 400px;
-    width: 100%;
+li{
     color: white;
-    text-align: center;
-    background: url(../img/fondo-espect.jpg) ;
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
 }
 p{
-    display: block;
-    color: beige;
+    color:white;
 }
-.Tour-Virtual {
-background-image:url(../img/bola-cristal.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.espectaculos { 
+    height: 100vh; 
+    text-align: center; 
+    background: url(../img/fondo-espect.jpg); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    } 
+    .break-text { 
+        width: 80%;  
+        max-width: 600px; 
+        margin: 0 auto; 
+        color: white;
+    }
+    .speaker-decoration { 
+        position: absolute; 
+        top: 50%;
+        transform: translateY(-50%); 
+        height: 80%;
+        max-height: 100vh;
+        width: auto;
+        z-index: 10;  
+        }
+        .speaker-left { 
+            left: -50px;  
+        } 
+        .speaker-right { 
+            right: -50px; 
+        }
+/*! html moods */
+.FiestaEgresados { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    height: 1000px; 
+    width: 100%; 
+    background-image: url(https://sc01.alicdn.com/kf/H96f45dfa9b4443fc85b8862795818831B/204927226/H96f45dfa9b4443fc85b8862795818831B.jpeg); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    text-align: center; 
+    align-items: center; 
+    gap: 16px; 
+    padding: 16px; 
+} 
+    .tarjeta { 
+        background-color: white; 
+        border-radius: 8px; 
+        overflow: hidden; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+        width: 300px; 
+        height: auto; 
+        margin: 0 auto; 
+    } 
+    .imagenfiesta { 
+        width: 100%; 
+        height: auto; 
+    } 
+    .tarjeta p { 
+        color: black; 
+        font-size: 30px; 
+    } 
+.tarjeta h2 { 
+    color: black; 
+    font-size: 30px,
 }
 /*!html COntacto*/
-.contact{
-    background-color: black;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contact { 
+    display: flex; 
+    background-color: black; 
+    text-align: center;  
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    flex-direction: column; 
+} 
+.contact form, .contact iframe { 
+    width: 100%; 
+    max-width: 600px; 
+    margin-top: 50px;
+    pointer-events: auto;
+} 
+.contact iframe { 
+    margin-top: 50px;
+    margin-bottom: 100px;
+    pointer-events: auto;
 }
 /* ! GRDS */
-.Contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    background: url(https://th.bing.com/th/id/R.c8e652aaeb508fd91677462fcad7ffb2?rik=930SvJctrgmHVA&riu=http%3a%2f%2fs3.amazonaws.com%2ffiverr.com%2fdeliveries%2f614353%2flarge%2fweb-banner-design-header_ws_1369117576.gif%3f1369117576&ehk=jGGj6bTRPXRkgAIHUDelx9JPvvmaSRV5s2B3BRQu2fk%3d&risl=&pid=ImgRaw&r=0) ;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+
+.Contenedor-Carta { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px; 
+    background-image: url(../img/fondo-bar.png); 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    grid-auto-rows: minmax(200px, auto); 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+} 
+.Contenedor-Carta div { 
+    background-color: rgba(60, 21, 68, 0.74); 
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
-.Contenedor-Carta{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    background-image: url(../img/fondo-bar.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-auto-rows: minmax(200px, auto);
+.item { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(10, 5, 5, 0.39); 
+    border: 1px solid #ccc; 
+    padding: 5px; height: 200px; 
+    margin: 0; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+.item img { 
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 }
 
-.Contenedor-Carta div{
-    background-color: #3c1544be;
+/*!formulario*/
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
-.item {
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form select,
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C20114 ;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #461111;
+}
+
+    iframe { 
+        flex: 1; 
+        max-height: 800px; 
+        height: 650px; 
+        border: 1px solid #ccc; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/*! Tour Virtual */
+.animated-header { 
+    font-size: 2em; 
+    color: white; 
+    margin-bottom: 20px; 
+    opacity: 0; 
+    background-color: red; 
+    padding: 10px; 
+    border-radius: 5px; 
+    animation: slide-in 2s forwards, color-change 6s infinite, border-radius-change 2s forwards;
+    text-align: center;
+}
+    @keyframes slide-in { 
+        0% { 
+            transform: translateY(100%); 
+            opacity: 0; 
+        } 
+        100% { 
+            transform: translateY(0); 
+            opacity: 1; 
+        } 
+    } 
+    @keyframes color-change { 
+        0% { 
+            background-color: rgb(16, 173, 173); 
+        } 
+        25% { background-color: purple; 
+        } 
+        50% {
+            background-color: green; 
+        } 
+        75% { 
+            background-color: darkblue; 
+        } 
+        100% { 
+            background-color: red; 
+        } 
+    }
+        @keyframes border-radius-change { 
+            0% {
+                border-radius: 0; 
+            } 
+            100% { 
+                border-radius: 20px; 
+            } 
+}
+
+.btn-tentador { 
+    background-color: black; 
+    color: white; 
+    border-radius: 5px;
+    padding: 10px 20px ;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    transition: all 0.3s ease; 
+} 
+.btn-tentador:hover { 
+    background-color: #C20114;
+    color: white; 
+    border-radius: 50%; }
+.carousel-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh;  
+    background: url(https://th.bing.com/th/id/R.fb8de03ab00ce2c804f8438eb705c820?rik=4sNwrJPmrybx0Q&pid=ImgRaw&r=0&sres=1&sresct=1) no-repeat center center; 
+    background-size: cover; 
+    justify-content: center; 
+}
+.Contenedor { 
+    position: relative; 
+    width: 50%;
+    max-width: 600px;
+    overflow: hidden; 
+    height: 400px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #C20114;
+} 
+.Contenedor .item { 
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0a050563;
-    border: 1px solid #ccc;
-    padding: 5px;
-    height: 200px;
-    margin: 0;
+} 
+.Contenedor .item img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+} 
+.Contenedor input[type="radio"] { 
+    display: none; 
+} 
+.carousel-controls { 
+    position: absolute; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    bottom: 10px; 
+} 
+    .carousel-controls label { 
+        width: 12px; 
+        height: 12px; 
+        margin: 0 5px; 
+        background-color :#C20114;
+        border-radius: 50%; 
+        cursor: pointer; 
+        transition: background-color 0.3s; 
+    } 
+    .carousel-controls label:hover { 
+        background-color: #666; 
+    } 
+    #slide1:checked ~ #img1, 
+    #slide2:checked ~ #img2, 
+    #slide3:checked ~ #img3, 
+    #slide4:checked ~ #img4, 
+    #slide5:checked ~ #img5, 
+    #slide6:checked ~ #img6 { 
+        display: flex; 
+        opacity: 1; 
+    }
+/*!NOSOTROS*/
 
+.nosotros-body h1 { 
+    font-size: 3rem; 
+    color: white; 
+    background: url(../img/quienes-somos.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+    padding: 50px 0; 
+    position: relative; 
 }
-.item img {
-    max-width: 100%;
-    max-height: 100%;
+
+.nosotros-body h1::after { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: rgba(0, 0, 255, 0.5); 
+    z-index: -2; 
+}
+#proposito-mision-vision, #valores, #politica-empresarial { 
+    background-color: #333; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+#politica-empresarial ul {
+    margin-top: 5px;
+}
+
+.fade-in-text { 
+    opacity: 0; 
+    animation: fadeIn 3s forwards;
+    z-index: -2;
+} 
+@keyframes fadeIn {
+    to { 
+        opacity: 1; 
+    } 
 }
 /*!FOOOTER*/
+
 .footer {
     background-color:#C20114;
     text-align: center;
-    padding: 5px; 
+    margin: 0;
+    padding: 0; 
     position: fixed; 
-    width: 75px; 
+    width: 80px; 
 }
 
 .fixer {
@@ -201,9 +505,22 @@ background-image:url(../img/bola-cristal.jpg);
     width: 50px; 
     height: auto; 
 }
+
+@media (max-width: 1280px){
+    .speaker-decoration { 
+        height: 50%; 
+    }
+}
+
+@media(max-width: 1000px){
+    .speaker-decoration{
+        display: none;
+    }
+}
 @media (max-width: 900px) {
 .Contenedor{
-grid-template-columns: repeat (2, 1fr);
+grid-template-columns: repeat (2, fr);
+grid-template-rows: repeat(2, auto);
 }
 .Tour-Virtual{
     background-image: url(../img/Bypass-color.jpg);
@@ -211,6 +528,7 @@ grid-template-columns: repeat (2, 1fr);
 .Contenedor-Carta{
     grid-template-columns: 1fr;
 }
+
 .item {
     display: flex;
     justify-content: center;
@@ -231,6 +549,11 @@ grid-template-columns: repeat (2, 1fr);
     header .logo, header .Barra-Busqueda {
         display: block;
         margin: 10px;
+    }
+    .FiestaEgresados{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        height: auto;
     }
     header .Barra-Busqueda{
         margin-top: 10px;

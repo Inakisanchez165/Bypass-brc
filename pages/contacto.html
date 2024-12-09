@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Disfruta de la mejor noche de tu vida y la mejor experiencia de tu viaje de egresados en ByPass, La mejor discoteca de la republica argentina dos veces premiada por integrar el Top 100 global segun La Asociasion Internacional de Ocio Nocturno Siendo la Numero 87 del Prestigioso Listado.">
+    <meta name="keywords" content=" Discoteque, Discoteca, Boliche, Egresados, Bariloche, Fiesta, Bypass, Joda, Baile, Tragos, Bailar, Viaje, Musica, Iluminacion, Sonido, Lasershow, Cocteles, Inolvidable, Disco, Club">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>ByPass Contacto</title>
     <link rel="icon" href="../img/Logo_Bypass-removebg-preview-ai-brush-removebg-f9r6bv5d.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
 </head>
 <body>
     <body>
@@ -25,44 +28,54 @@
             </nav>
         </header>
         <main>
-            <section class="Contact">
-            <form action="enviar_formulario.php" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div><label for="Celular"> Numero Celular</label>
-                    <input type="number" id="Celular" name="Celular">
-                </div>
-                <div>
-                    <label for="genero">Género:</label>
-                    <select id="genero" name="genero" required>
-                        <option value="">Selecciona tu género</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                </div>
-                <button # type="submit">Enviar</button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d375.6303772406115!2d-71.30522020955608!3d-41.13358686890715!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1729812293264!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="contact">
+                <form action="enviar_formulario.php" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="celular">Número Celular:</label>
+                        <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
+                    </div>
+                    <div>
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="">Selecciona tu género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.2628064284155!2d-71.30627893030955!3d-41.13340768811503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b7221e32bb5%3A0x90a50ccfc946d024!2sBy%20Pass!5e0!3m2!1ses-419!2sus!4v1734219280832!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
             </main>
         <footer>
-            <section id="Contacto">
-                <div class="fixer">
-                    <img src="../img/spotify.png" class="spotifyLogo" alt="spotylogo">
-                    <img src="../img/tik-tok (1).png" class="Tiktoklogo" alt="tiktok">
-                    <img src="../img/instagram.png" class="Instagramlogo" alt="instalogo">
-                </div>
-            </section>
-        </footer>
+            <footer>
+                <section class="Contacto">
+                    <div class="fixer">
+                        <a href="https://www.instagram.com/bypass.ar/?hl=es" target="_blank">
+                            <img src="../img/instagram.png" class="Instagramlogo" alt="https://www.instagram.com/bypass.ar/?hl=es">
+                        </a>
+                        <a href="https://tiktok.com/@bypass_bariloche" target="_blank">
+                            <img src="../img/tik-tok (1).png" class="Tiktoklogo" alt="https://tiktok.com/@bypass_bariloche">
+                        </a>
+                        <a href="https://open.spotify.com/user/31cy66oygmqugwczsecs5cooql4u?si=mNyS7pVqQDi9a4j7tKWgQw" target="_blank">
+                            <img src="../img/spotify.png" class="spotifyLogo" alt="https://open.spotify.com/user/31cy66oygmqugwczsecs5cooql4u?si=mNyS7pVqQDi9a4j7tKWgQw">
+                        </a>
+                        <a href="https://alliancesas.com.ar/" target="_blank">© ALLIANCE S.A.S – 2024 Todos los Derechos de Autor Reservados</a>
+                    </div>
+                </section>
+            </footer>
 </body>
 </html>
