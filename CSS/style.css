@@ -93,6 +93,10 @@ color: rebeccapurple;
     text-align: center;
 }
 
+.Main-carta h3 {
+    color: whitesmoke;
+}
+
 h1{
     color: white;
     font-size: 50px;
